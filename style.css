@@ -1,281 +1,1042 @@
+/*==========================================
+Nature Safe General Maintenance LLC SPC
+Premium UAE Corporate Website
+style.css - Part 1
+==========================================*/
+
+/* Google Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* Reset */
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
 scroll-behavior:smooth;
-font-family:Arial,Helvetica,sans-serif;
+}
+
+:root{
+
+--primary:#0A4DA3;
+--secondary:#16A34A;
+--dark:#0F172A;
+--light:#ffffff;
+--gray:#f5f7fa;
+--text:#555;
+--shadow:0 15px 40px rgba(0,0,0,.08);
+--radius:12px;
+
 }
 
 body{
-background:#f5f7fa;
+
+font-family:'Poppins',sans-serif;
+background:#fff;
 color:#333;
-line-height:1.6;
+line-height:1.7;
+overflow-x:hidden;
+
 }
 
+img{
+
+max-width:100%;
+display:block;
+
+}
+
+.container{
+
+width:90%;
+max-width:1200px;
+margin:auto;
+
+}
+
+section{
+
+padding:100px 0;
+
+}
+
+a{
+
+text-decoration:none;
+
+}
+
+ul{
+
+list-style:none;
+
+}
+
+.section-title{
+
+text-align:center;
+margin-bottom:60px;
+
+}
+
+.section-title h2{
+
+font-size:42px;
+font-weight:700;
+color:var(--dark);
+margin-bottom:15px;
+
+}
+
+.section-title p{
+
+font-size:18px;
+color:#777;
+
+}
+
+/*==========================
+HEADER
+==========================*/
+
 header{
+
 position:fixed;
 top:0;
 left:0;
 width:100%;
-background:#0d3b66;
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 8%;
-z-index:1000;
-box-shadow:0 5px 15px rgba(0,0,0,.2);
-}
+background:#fff;
+box-shadow:0 5px 25px rgba(0,0,0,.08);
+z-index:999;
 
-.logo{
-font-size:28px;
-font-weight:bold;
-color:#fff;
-}
-
-.logo span{
-color:#35c759;
 }
 
 nav{
+
+height:85px;
 display:flex;
-gap:30px;
+align-items:center;
+justify-content:space-between;
+
 }
 
-nav a{
-color:#fff;
-text-decoration:none;
-font-size:17px;
+.logo img{
+
+height:65px;
+
+}
+
+nav ul{
+
+display:flex;
+gap:35px;
+
+}
+
+nav ul li a{
+
+font-size:16px;
+font-weight:500;
+color:#333;
 transition:.3s;
+
 }
 
-nav a:hover{
-color:#35c759;
+nav ul li a:hover{
+
+color:var(--primary);
+
 }
 
-.profile-btn{
-background:#35c759;
+.nav-buttons{
+
+display:flex;
+gap:15px;
+
+}
+
+.call-btn{
+
+background:var(--primary);
 color:#fff;
 padding:12px 22px;
-border-radius:30px;
-text-decoration:none;
-font-weight:bold;
+border-radius:40px;
+font-size:15px;
 transition:.3s;
+
 }
 
-.profile-btn:hover{
-background:#29a847;
+.call-btn:hover{
+
+background:#083b7d;
+
 }
+
+.whatsapp-btn{
+
+background:var(--secondary);
+color:#fff;
+padding:12px 22px;
+border-radius:40px;
+font-size:15px;
+transition:.3s;
+
+}
+
+.whatsapp-btn:hover{
+
+background:#12823d;
+
+}
+
+/*==========================
+HERO
+==========================*/
 
 .hero{
+
 height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:120px 20px 50px;
-background:linear-gradient(rgba(13,59,102,.88),rgba(13,59,102,.88)),
-url("https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1600&q=80");
+
+background:
+
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+
+url(images/hero.jpg);
+
 background-size:cover;
 background-position:center;
-color:#fff;
+
+display:flex;
+align-items:center;
+
 }
 
 .hero-content{
-max-width:900px;
+
+max-width:700px;
+color:#fff;
+
+}
+
+.hero h4{
+
+font-size:22px;
+font-weight:500;
+margin-bottom:15px;
+color:#7dd3fc;
+
 }
 
 .hero h1{
-font-size:55px;
-margin-bottom:20px;
+
+font-size:62px;
+font-weight:700;
+line-height:1.2;
+margin-bottom:25px;
+
 }
 
 .hero p{
-font-size:20px;
-margin-bottom:40px;
+
+font-size:18px;
+margin-bottom:35px;
+color:#f1f1f1;
+
 }
 
 .hero-buttons{
+
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+
+}
+
+/*==========================
+BUTTONS
+==========================*/
+
+.btn{
+
+display:inline-block;
+
+background:var(--primary);
+
+color:#fff;
+
+padding:15px 35px;
+
+border-radius:50px;
+
+font-size:16px;
+
+font-weight:600;
+
+transition:.35s;
+
+}
+
+.btn:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+.btn-outline{
+
+background:transparent;
+
+border:2px solid #fff;
+
+}
+
+.btn-outline:hover{
+
+background:#fff;
+
+color:var(--primary);
+
+}
+/*==========================================
+STYLE.CSS - PART 2
+==========================================*/
+
+/* ABOUT */
+
+.about{
+
+background:#fff;
+
+}
+
+.about-grid{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:70px;
+
+align-items:center;
+
+}
+
+.about-image img{
+
+width:100%;
+
+border-radius:15px;
+
+box-shadow:var(--shadow);
+
+}
+
+.about-content h2{
+
+font-size:42px;
+
+margin-bottom:20px;
+
+color:var(--dark);
+
+}
+
+.about-content p{
+
+font-size:17px;
+
+color:var(--text);
+
+margin-bottom:20px;
+
+}
+
+/* VISION */
+
+.vision{
+
+background:var(--gray);
+
+}
+
+.vision-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:35px;
+
+}
+
+.vision-card{
+
+background:#fff;
+
+padding:40px;
+
+border-radius:15px;
+
+box-shadow:var(--shadow);
+
+transition:.35s;
+
+text-align:center;
+
+}
+
+.vision-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.vision-card .icon{
+
+width:80px;
+
+height:80px;
+
+margin:auto;
+
+margin-bottom:25px;
+
+border-radius:50%;
+
+background:var(--primary);
+
+color:#fff;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:34px;
+
+}
+
+.vision-card h3{
+
+font-size:28px;
+
+margin-bottom:20px;
+
+color:var(--dark);
+
+}
+
+.vision-card p{
+
+color:var(--text);
+
+}
+
+/* SERVICES */
+
+.services{
+
+background:#fff;
+
+}
+
+.services-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+}
+
+.service-card{
+
+background:#fff;
+
+border-radius:15px;
+
+overflow:hidden;
+
+box-shadow:var(--shadow);
+
+transition:.35s;
+
+}
+
+.service-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.service-card img{
+
+width:100%;
+
+height:240px;
+
+object-fit:cover;
+
+}
+
+.service-card h3{
+
+font-size:24px;
+
+padding:25px 25px 10px;
+
+color:var(--dark);
+
+}
+
+.service-card p{
+
+padding:0 25px 30px;
+
+color:var(--text);
+
+}
+
+/* WHY CHOOSE US */
+
+.why-choose{
+
+background:var(--gray);
+
+}
+
+.why-grid{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:25px;
+
+}
+
+.why-card{
+
+background:#fff;
+
+padding:40px 30px;
+
+border-radius:15px;
+
+text-align:center;
+
+box-shadow:var(--shadow);
+
+transition:.35s;
+
+}
+
+.why-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.why-card i{
+
+font-size:48px;
+
+color:var(--secondary);
+
+margin-bottom:25px;
+
+}
+
+.why-card h3{
+
+font-size:22px;
+
+margin-bottom:15px;
+
+color:var(--dark);
+
+}
+
+.why-card p{
+
+color:var(--text);
+
+}
+
+/* COMMITMENT */
+
+.commitment{
+
+background:#fff;
+
+}
+
+.center-text{
+
+max-width:900px;
+
+margin:auto;
+
+text-align:center;
+
+font-size:18px;
+
+color:var(--text);
+
+line-height:1.9;
+
+}
+
+/* HEALTH */
+
+.health{
+
+background:var(--gray);
+
+}
+
+/* PROMISE */
+
+.promise{
+
+background:#fff;
+
+}
+
+/* GALLERY */
+
+.gallery{
+
+background:var(--gray);
+
+}
+
+.gallery-grid{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:20px;
+
+}
+
+.gallery-grid img{
+
+width:100%;
+
+height:280px;
+
+object-fit:cover;
+
+border-radius:12px;
+
+transition:.35s;
+
+cursor:pointer;
+
+box-shadow:var(--shadow);
+
+}
+
+.gallery-grid img:hover{
+
+transform:scale(1.05);
+
+}
+/*==========================================
+STYLE.CSS - PART 3
+==========================================*/
+
+/* COMPANY PROFILE */
+
+.company-profile{
+
+background:#ffffff;
+
+}
+
+.profile-buttons{
+
 display:flex;
 justify-content:center;
 gap:20px;
 flex-wrap:wrap;
+margin-top:40px;
+
 }
 
-.btn{
-background:#35c759;
-color:#fff;
-padding:15px 30px;
-border-radius:40px;
-text-decoration:none;
-font-size:18px;
-font-weight:bold;
-transition:.3s;
-}
-
-.btn:hover{
-transform:translateY(-3px);
-background:#29a847;
-}
-
-.btn2{
-background:#ff9800;
-}
-
-.btn2:hover{
-background:#e68900;
-}
-
-section{
-padding:90px 8%;
-}
-
-section h2{
-text-align:center;
-font-size:40px;
-color:#0d3b66;
-margin-bottom:40px;
-}
-
-.about p{
-max-width:900px;
-margin:auto;
-font-size:18px;
-text-align:center;
-}
-
-.service-box{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.card{
-background:#fff;
-padding:35px;
-border-radius:15px;
-text-align:center;
-box-shadow:0 10px 25px rgba(0,0,0,.08);
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-10px);
-}
-
-.card i{
-font-size:45px;
-color:#35c759;
-margin-bottom:20px;
-}
-
-.card h3{
-margin-bottom:15px;
-color:#0d3b66;
-}
-
-.why{
-background:#0d3b66;
-color:#fff;
-}
-
-.why h2{
-color:#fff;
-}
-
-.why-box{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.why-box div{
-background:rgba(255,255,255,.1);
-padding:25px;
-border-radius:10px;
-font-size:18px;
-}
-
-.why-box i{
-color:#35c759;
-margin-right:10px;
-}
+/* CONTACT */
 
 .contact{
+
+background:#f5f7fa;
+
+}
+
+.contact-grid{
+
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:30px;
+margin-bottom:60px;
+
+}
+
+.contact-card{
+
+background:#fff;
+padding:40px 25px;
 text-align:center;
+border-radius:15px;
+box-shadow:var(--shadow);
+transition:.35s;
+
 }
 
-.contact p{
-font-size:20px;
-margin:20px 0;
+.contact-card:hover{
+
+transform:translateY(-10px);
+
 }
 
-.contact i{
-color:#35c759;
-margin-right:10px;
+.contact-card i{
+
+font-size:45px;
+color:var(--primary);
+margin-bottom:20px;
+
 }
 
-.contact a{
-color:#333;
-text-decoration:none;
+.contact-card h3{
+
+font-size:24px;
+margin-bottom:10px;
+color:var(--dark);
+
 }
+
+.contact-card p{
+
+color:var(--text);
+font-size:16px;
+word-break:break-word;
+
+}
+
+.map{
+
+border-radius:15px;
+overflow:hidden;
+box-shadow:var(--shadow);
+
+}
+
+/* FOOTER */
 
 footer{
-background:#0d3b66;
+
+background:#0F172A;
 color:#fff;
+padding:60px 20px;
 text-align:center;
-padding:25px;
+
 }
 
-.whatsapp{
+footer h2{
+
+font-size:30px;
+margin-bottom:15px;
+
+}
+
+footer p{
+
+margin:10px 0;
+color:#d1d5db;
+
+}
+
+footer a{
+
+color:#7dd3fc;
+
+}
+
+footer a:hover{
+
+color:#fff;
+
+}
+
+/* FLOATING BUTTONS */
+
+.floating-whatsapp,
+.floating-call{
+
 position:fixed;
-bottom:25px;
-right:25px;
-width:65px;
-height:65px;
-background:#25D366;
+right:20px;
+width:60px;
+height:60px;
 border-radius:50%;
 display:flex;
-justify-content:center;
 align-items:center;
+justify-content:center;
 color:#fff;
-font-size:34px;
-text-decoration:none;
-box-shadow:0 5px 20px rgba(0,0,0,.3);
+font-size:24px;
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+z-index:999;
 transition:.3s;
+
 }
 
-.whatsapp:hover{
+.floating-whatsapp{
+
+bottom:25px;
+background:#25D366;
+
+}
+
+.floating-call{
+
+bottom:100px;
+background:#0A4DA3;
+
+}
+
+.floating-whatsapp:hover,
+.floating-call:hover{
+
 transform:scale(1.1);
+
+}
+
+/* ANIMATIONS */
+
+.service-card,
+.vision-card,
+.why-card,
+.contact-card{
+
+animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+0%{
+
+opacity:0;
+transform:translateY(40px);
+
+}
+
+100%{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1100px){
+
+.services-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.contact-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.why-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.about-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.hero h1{
+
+font-size:48px;
+
+}
+
 }
 
 @media(max-width:768px){
 
 header{
-flex-direction:column;
-gap:15px;
-padding:20px;
+
+position:relative;
+
 }
 
 nav{
-flex-wrap:wrap;
-justify-content:center;
+
+flex-direction:column;
+height:auto;
+padding:20px 0;
+
+}
+
+nav ul{
+
+flex-direction:column;
 gap:15px;
+margin:20px 0;
+
+}
+
+.nav-buttons{
+
+flex-direction:column;
+width:100%;
+
+}
+
+.call-btn,
+.whatsapp-btn{
+
+text-align:center;
+
+}
+
+.hero{
+
+height:auto;
+padding:140px 0 80px;
+
+}
+
+.hero-content{
+
+text-align:center;
+
 }
 
 .hero h1{
-font-size:36px;
+
+font-size:38px;
+
+}
+
+.hero h4{
+
+font-size:18px;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+}
+
+.section-title h2{
+
+font-size:34px;
+
+}
+
+.services-grid,
+.gallery-grid,
+.contact-grid,
+.vision-grid,
+.why-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.profile-buttons{
+
+flex-direction:column;
+align-items:center;
+
+}
+
+.floating-whatsapp,
+.floating-call{
+
+width:55px;
+height:55px;
+font-size:22px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.container{
+
+width:92%;
+
+}
+
+.hero h1{
+
+font-size:30px;
+
 }
 
 .hero p{
-font-size:17px;
-}
 
-section h2{
-font-size:32px;
+font-size:15px;
+
 }
 
 .btn{
-width:100%;
-max-width:320px;
+
+padding:14px 24px;
+font-size:15px;
+
 }
+
+.section-title h2{
+
+font-size:28px;
+
 }
+
+.about-content h2{
+
+font-size:30px;
+
+}
+
+.service-card h3,
+.vision-card h3,
+.why-card h3{
+
+font-size:22px;
+
+}
+
+footer h2{
+
+font-size:24px;
+
+}
+
+}
+
+/* END OF FILE */
