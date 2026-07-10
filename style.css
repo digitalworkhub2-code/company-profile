@@ -1040,3 +1040,78 @@ font-size:24px;
 }
 
 /* END OF FILE */
+/* Ripple Effect */
+
+.btn{
+
+position:relative;
+overflow:hidden;
+
+}
+
+.ripple{
+
+position:absolute;
+border-radius:50%;
+background:rgba(255,255,255,.5);
+transform:scale(0);
+animation:ripple .6s linear;
+
+}
+
+@keyframes ripple{
+
+to{
+
+transform:scale(4);
+opacity:0;
+
+}
+
+}
+
+/* Scroll Animation */
+
+.hidden{
+
+opacity:0;
+transform:translateY(60px);
+transition:all .8s ease;
+
+}
+
+.show{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+nav ul li a.active{
+
+color:#0A4DA3;
+font-weight:700;
+
+}
+
+body.loaded{
+
+animation:fadePage .8s;
+
+}
+
+@keyframes fadePage{
+
+from{
+
+opacity:0;
+
+}
+
+to{
+
+opacity:1;
+
+}
+
+}
