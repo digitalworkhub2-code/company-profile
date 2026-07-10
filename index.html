@@ -495,29 +495,56 @@ outstanding results on time and within budget.
 PROJECT GALLERY
 ========================= -->
 
-<section class="gallery">
+<section id="gallery" class="gallery">
 
 <div class="container">
 
 <div class="section-title">
-<h2>Project Gallery</h2>
+<h2>Our Projects</h2>
 <p>Recent Maintenance & Renovation Projects</p>
 </div>
 
 <div class="gallery-grid">
 
-<img src="images/gallery/1.jpg" alt="">
-<img src="images/gallery/2.jpg" alt="">
-<img src="images/gallery/3.jpg" alt="">
-<img src="images/gallery/4.jpg" alt="">
-<img src="images/gallery/5.jpg" alt="">
-<img src="images/gallery/6.jpg" alt="">
+<div class="gallery-item">
+<img src="images/gallery/1.jpg" alt="Project 1" onclick="openImage(this.src)">
+</div>
+
+<div class="gallery-item">
+<img src="images/gallery/2.jpg" alt="Project 2" onclick="openImage(this.src)">
+</div>
+
+<div class="gallery-item">
+<img src="images/gallery/3.jpg" alt="Project 3" onclick="openImage(this.src)">
+</div>
+
+<div class="gallery-item">
+<img src="images/gallery/4.jpg" alt="Project 4" onclick="openImage(this.src)">
+</div>
+
+<div class="gallery-item">
+<img src="images/gallery/5.jpg" alt="Project 5" onclick="openImage(this.src)">
+</div>
+
+<div class="gallery-item">
+<img src="images/gallery/6.jpg" alt="Project 6" onclick="openImage(this.src)">
+</div>
 
 </div>
 
 </div>
 
 </section>
+
+<!-- IMAGE POPUP -->
+
+<div id="imagePopup" class="image-popup">
+
+<span class="close-popup" onclick="closeImage()">&times;</span>
+
+<img id="popupImage">
+
+</div>
 
 <!-- =========================
 COMPANY PROFILE
