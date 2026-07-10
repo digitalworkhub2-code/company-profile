@@ -240,3 +240,44 @@ document.body.classList.add("loaded");
 });
 
 console.log("Nature Safe Website Loaded Successfully");
+/*==========================
+GALLERY POPUP
+==========================*/
+
+function openImage(src){
+
+document.getElementById("imagePopup").style.display="flex";
+
+document.getElementById("popupImage").src=src;
+
+document.body.style.overflow="hidden";
+
+}
+
+function closeImage(){
+
+document.getElementById("imagePopup").style.display="none";
+
+document.body.style.overflow="auto";
+
+}
+
+window.addEventListener("keydown",function(e){
+
+if(e.key==="Escape"){
+
+closeImage();
+
+}
+
+});
+
+document.getElementById("imagePopup").addEventListener("click",function(e){
+
+if(e.target===this){
+
+closeImage();
+
+}
+
+});
